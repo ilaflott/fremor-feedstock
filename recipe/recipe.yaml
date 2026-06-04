@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "0.9.5"
+  version: "0.9.6"
 
 package:
   name: fremor
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fremor/fremor-${{ version }}.tar.gz
-  sha256: 23f1a3028bbc296f52f035789a4b82b1db1e734b778c580977e525ef811d3987
+  sha256: ddba600e9c1bf88d7e275f236536811c72391a0b7286c4a1d373220cc80f8ac4
 
 build:
   number: 0
