@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fremor/fremor-${{ version }}.tar.gz
-  sha256: ddf37a84d5d89207cad89c0aa5877f672b50fb69cd2022744e0313af7fc33d61
+  sha256: 27b3cc8d720b1587b757d4d08f37ecdfafe15de93aae844080a7b5f93923cdaa
 
 build:
   number: 0
@@ -35,6 +35,9 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - fremor
       pip_check: true
